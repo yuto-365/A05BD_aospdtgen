@@ -108,3 +108,4 @@ vendor.camera.mdp.cz.enable=0
 vendor.camera.mdp.dre.enable=0
 vendor.connsys.driver.ready=no
 vendor.mtk.vdec.waitkeyframeforplay=1
+ro.sf.lcd_density=240

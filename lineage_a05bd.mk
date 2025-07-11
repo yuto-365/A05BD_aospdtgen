@@ -1,24 +1,24 @@
 #
-# Copyright (C) 2025 The LineageOS Project
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
-$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/full_base.mk)
 
 # Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_tablet_wifionly.mk)
 
 # Inherit from TAB-A05-BD device
-$(call inherit-product, device/sts-tottori/TAB-A05-BD/device.mk)
+$(call inherit-product, device/sts/a05bd/device.mk)
 
-PRODUCT_DEVICE := TAB-A05-BD
-PRODUCT_NAME := lineage_TAB-A05-BD
+PRODUCT_DEVICE := a05bd
+PRODUCT_NAME := lineage_a05bd
 PRODUCT_BRAND := benesse
-PRODUCT_MODEL := TAB-A05-BD
-PRODUCT_MANUFACTURER := sts-tottori
+PRODUCT_MODEL := a05bd
+PRODUCT_MANUFACTURER := sts
 
 PRODUCT_GMS_CLIENTID_BASE := android-sts-tottori
 
